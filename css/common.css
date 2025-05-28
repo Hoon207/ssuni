@@ -1,0 +1,212 @@
+@charset "utf-8";
+
+.nanum-gothic-regular {
+    font-family: "Nanum Gothic", serif, arial;
+    font-weight: 400;
+    font-style: normal;
+    font-size:0.75em;
+    color:#333;
+}
+
+a{
+  color:#333;
+  text-decoration: none;
+}
+
+label[for=toggle], i.fa-search{
+  cursor: pointer;
+}
+
+#toggle{display:none;}
+
+  /*글자크기 16px =1em =1rem = 100%*/
+  /*헤더서식*/
+  /*pc 해상도 서식*/
+  
+    header{
+      width:100%;
+      position:relative;
+      z-index: 1000;
+      height:112px;
+  
+    }
+    .header_inner{
+      width:1200px;
+      margin:0 auto;
+      height:72px;
+      background-color: #ffffff;
+      position: relative;
+  }
+      h1{
+          /*position:absolute; top:20px;*/
+          transform:translateY(5px);
+          width:196px;    
+      }
+    /*푸터서식*/
+      .lnb>ul{
+          position:absolute;
+          right:10px;
+          top:20px;
+          display:flex;
+      }
+      .lnb a{
+          text-transform: uppercase;
+          font-size:13px;
+          border-right:1px solid #ccc;
+          padding:0px 8px;
+          line-height: 22px;  
+      }
+  
+      .lnb a:hover{
+        text-decoration: underline;
+      }
+  
+    /*검색박스 서식*/
+    .fa-times{
+      transition:1s;
+    }
+    .fa-times:hover{
+      transform:rotate(360deg);
+    }
+    #sh{
+      border:none;
+      border-bottom:1px solid #333;
+      line-height:24px;
+    }
+    
+    .m_search{
+      transform: translate(-30px, 4px);
+      font-size:180px;
+      color:red;
+  
+    }
+    .lnb li:nth-child(6) a{
+      border:none;
+    }
+  /*pc버전은 닫기 버튼 검색버튼 숨기기*/
+    label[for=toggle],.m_search{
+    display: none;
+    }
+  
+    /*gnb서식*/
+  
+    .gnb{
+      width:100%;
+      background-color: #f5f5f58f;
+      height:40px;
+      overflow:hidden;
+      transition:0.3s;
+    }
+    
+    .fa-angle-down{
+      display:none;
+    }
+    .gnb>ul{
+      width:1200px; /*웹사이트 pc버전의 기준*/
+      margin:0 auto;
+      display: flex;
+      justify-content: right;
+      overflow:hidden;
+    }
+  
+    .gnb > ul> li{
+      margin:0 3.4%;
+      text-align: center;
+      position:relative; /*sub의 기준*/
+      overflow:hidden;
+    }
+  
+    .gnb > ul> li > a{
+      font-size:16px;
+      padding:0px 6px; /*반응영역 넓히기*/
+      display:block; /*크기값 주기위해*/
+      line-height:40px;
+      overflow:hidden;
+    }
+    .gnb > ul> li > a:hover{
+      color:#ff8801;
+    }
+  
+    /*서브메뉴 서식*/
+    
+  .sub{}
+  .sub a{
+    line-height: 36px;
+    display:block;
+    font-size:13px; 
+  }
+  .sub a:hover{
+    background-color: black;
+    color:white;
+  }
+  main{box-sizing: border-box; overflow: hidden;}
+  .f_lnb > ul{display:flex; justify-content: center;}
+  footer{
+    background:#f8f8f8;
+    border-top: 1px solid black;
+    width:100%;
+    padding:10px 0px;
+    overflow:hidden;
+  }
+  .f_lnb{
+    margin:0 auto;
+    width:1200px;
+    font-size:11px;
+  }
+  .f_lnb > ul{
+    display:flex;
+    justify-content: left;
+  }
+  .f_lnb>ul>li{
+    
+  }
+  .f_lnb>ul>li>a{
+    line-height: 160%;
+  }
+  footer>address{
+    font-size:11px;
+    }  
+  .f_lnb, address, .sns{
+      width:1200px;
+      margin:0 auto;    
+    }
+  address > p{
+    width:1200px;
+      font-size:11px;
+      line-height: 30px;
+  }
+  .sns>ul{
+    display:flex;
+    justify-content: right;}
+  
+  .notice h3,.news h3{
+    font-family:'Times New Roman', Times, serif;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    border-bottom:1px solid #333;
+    line-height:40px;
+    padding:6px 1.2% 0 1.2%;
+    margin-bottom: 10px;
+  }
+
+  .notice .fa-plus, .news .fa-plus{
+    float:right;
+    border:1px solid #333;
+    padding: 3px 5px;
+    font-size:0.9rem;
+    transform:translateY(7px);
+    cursor: pointer;
+  }
+  .notice ul, .news ul{}
+  .notice li, .news li{
+    line-height: 30px;
+    text-indent: 10px;
+    overflow:hidden; /*영역벗어나면 숨기기/ 생갹기호 표시/ 다음줄로 넘기지 않기 3가지*/
+    text-overflow:ellipsis; 
+    white-space:nowrap;
+  }
+
+
+
+
+

@@ -1,0 +1,21 @@
+@charset "utf-8";
+
+/*pc 해상도 서식*/
+
+ @media screen and (min-width:1025px){
+  .gnb:hover{height:240px;}
+  .gnb > ul> li > a::after{
+    display:block;
+    content: '';
+    height:3px;
+    background: red;
+    transform:translateY(-3px) scale(0);
+    transition:0.3s;
+  }
+
+  .gnb > ul> li >a:hover::after{
+    transform: translateY(-3px) scale(1);
+  }
+
+
+ }

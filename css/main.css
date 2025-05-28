@@ -1,0 +1,175 @@
+@charset "utf-8";
+
+
+    h2{display: none;}
+    main{padding:0px 1.2% 50px 1.2%;
+    box-sizing: border-box;
+    overflow:hidden;
+  }
+    .slide{width:100%;}
+    .con{
+      width:1200px;
+      margin:0 auto;
+      display: grid;
+      padding:10px;
+      grid-gap: 10px;
+      box-sizing:border-box;
+      grid-template-columns: repeat(3,auto);
+      grid-template-rows: repeat(2,auto);
+      
+    }
+    .con>h2{
+      display: none;
+    }
+    .story .bs img{padding-bottom:17px;}
+    .banner h3, .story h3, .ad h3{display:none;}
+    .banner img, .story img, .ad img, .store{width:100%;}
+    
+    
+    .banner{width:360px;}
+    .story{width:460px;}
+    .ad{width:360px;}
+    
+    .notice{width:360px;}
+    .store{width:460px;
+    text-align: center;
+    padding-top: 20px;
+    box-sizing: border-box;
+  }
+    .news{width:360px;}
+    .store h3{display: none;}
+    .story>.bs{
+      display:inline-block;
+      height:180px;
+      width:100%;
+    }
+    .story> .bs:hover> img{display:none;}
+    .story> .bs:hover{
+      background:url(../images/mbn0202ov.png) no-repeat;
+      background-size:100%;
+    }
+    .notice{
+      background-color: white;
+    }
+
+    .notice a:hover, .news a:hover{
+      text-decoration: underline;
+    }
+    /*스마트폰 작은 화면*/
+    @media screen and(min-width:300px) and (max-width:390px){
+    
+      .fa_search {  /*모바일 돋보기 그냥 배경 아이콘*/
+        color:black; 
+        position:absolute;
+        transform:translate(100px,-45px); font-size:2rem;}
+      .notice li, .news li{
+        width:320px; /*아이폰미니*/
+        /*아이폰13*/
+        font-size:0.95rem;}
+      }
+    /*스마트폰 큰 화면*/
+    @media screen and (min-width:414px) {
+      .notice li, .news li{
+      min-width:320px; /*아이폰미니*/
+        max-width: 414px; /*아이폰13*/
+        font-size:0.95rem;
+      }
+      
+       .fa_search {  /*모바일 돋보기 그냥 배경 아이콘*/
+          color:black; 
+          position:absolute;
+          transform:translate(100px,-45px); font-size:2rem;}
+      
+    }
+    @media screen and (max-width:767px){
+      /*모바일 >> 가로크기 100%*/
+      header{height:76px;}
+      .slides img{
+        height:380px !important;
+        object-fit: cover;
+      }
+      .con{
+        width:100%;
+        margin:10 0px;
+        grid-template-columns: repeat(1,auto);    
+        grid-template-rows: repeat(6,auto);    
+      }
+      
+      .con img{width:100%;}
+      .story, .banner, .ad, .notice, .store, .news{width:100%;}
+      .store img{width:93%;}
+      .notice li, .news li{
+        
+        
+      }
+
+
+    }
+/*------------------------ tab ------------------------*/
+    @media screen and (min-width:768px) and (max-width:1024px) {
+
+      @media screen and (max-width:819px){}
+
+      .con .ad img, .con .news img, .con .banner img{
+        width:100%;
+      }
+    .story{width:100%; text-align: center;}
+    .story .bs{width:49.4%; float: left;}
+    .story .fran{width:49.4%; float: right;}
+    
+      .header_inner,.f_lnb,.gnb>ul, .sns, address, address>p{
+        width:100%;
+      }
+    
+      .con{
+        width:100%;
+        display: grid;
+        box-sizing:border-box;
+        grid-template-columns: repeat(2,auto);
+        grid-template-rows: repeat(4,auto);
+      }  
+      #toggle_btn{
+        display:block;
+        position:absolute;
+        right:10px;
+        top:74px;
+        font-size:2rem;
+      }
+      .gnb > ul{
+        width:94%;
+        margin-right: 3.8%;
+        transform: translateY(-5px);
+      }
+      .gnb > ul > li{
+        margin:0 2.4%;
+        text-align: center;
+      }
+      #toggle:checked + header>.gnb{
+        height:250px;
+      }
+    footer{}
+    .f_lnb, address, .sns{
+      width:100%;
+    }
+    
+    .sns{
+      transform: translate(-10px, 16px);
+    }
+    address{
+      padding-left:1%;
+    }
+    
+    .gnb > ul> li > a::after{
+      display:block;
+      content: '';
+      height:3px;
+      background: red;
+      transform:translateY(-3px) scale(0);
+      transition:0.3s;
+    }
+    
+    .gnb > ul> li >a:hover::after{
+      transform: translateY(-3px) scale(1);
+    }
+    
+     }

@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv = "Date" content="2025-02-19T10:45:30:+09:00">
+    <meta http-equiv= "X-UA-Compatible" content = "IE=edge">
+    <meta http-equiv= "Subject" content = "디저트, 커피">
+    <meta http-equiv= "Title" content = "쑤니 디저트카페"> 
+    <meta http-equiv= "author" content = "홍길동" >
+    <meta name= "Describtion" content = "쑤니 디저트 카페, 케이크,빵,커피,제조음료">
+    <meta http-equiv= "Copyright" content = "copryright@dothome">
+    <meta http-equiv= "Build" content = "date">
+    <meta http-equiv= "Last-Modified" content = "Mon,20 Jul 2016 19:30:30">
+    <meta http-equiv= "Refresh" content = "60">
+    <meta http-equiv= "Page-Enter" content = "revealtrans(Duration=1, Transition=12)">
+    <meta http-equiv= "robots" content="index, follow">
+    <title>반응형웹-쑤니디저트카페</title>
+      <link rel="shortcut icon" type="image/x-icon" href="./images/favi.ico">
+
+      <!--나눔고딕-->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+
+      <!--폰트어썸-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+      <!--css초기화-->
+      <link rel="stylesheet" href="./css/reset.css" type="text/css">
+      <!--공통서식-->
+      <link rel="stylesheet" href="./css/common.css" type="text/css">
+      <!--pc버전-->
+      <link rel="stylesheet" href="./css/pc.css" type="text/css">
+      <!--tablet버전-->
+      <link rel="stylesheet" href="./css/tablet.css" type="text/css">
+      <!--mobile버전-->
+      <link rel="stylesheet" href="./css/mobile.css" type="text/css">
+      <!--main-->
+      <link rel="stylesheet" href="./css/main.css" type="text/css">
+
+      <link rel="stylesheet" href="./css/flexslider.css" type="text/css">
+
+      <!-- jQuery -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+
+      <script src="./script/jquery.flexslider.js">
+      </script>
+</head>
+<body>
+  <input type="checkbox" id="toggle">
+    <header>
+      <div class="header_inner">
+        <h1>
+          <a href="index.html" title="메인페이지">
+            <img src="./images/logo.png" alt="쑤니로고">
+          </a>
+        </h1>
+
+        <!--우측 상단 네비lnb-->
+        <nav class="lnb">
+          <ul>
+            <li><a href="index.html" title="홈으로">home</a></li>
+            <li><a href="index.html" title="프렌차이즈">프렌차이즈</a></li>
+            <li><a href="index.html" title="이벤트">이벤트</a></li>
+            <li><a href="index.html" title="회원가입">JOIN</a></li>
+            <li><a href="index.html" title="로그인">LOGIN</a></li>
+            <li><a href="index.html" title="관리자">ADMIN</a></li>
+            <li>
+              <input type="search" id="sh" placeholder="쑤니디저트">
+              <label for="sh"><i class="fas fa-search m_search2"></i></label>
+            </li>
+          </ul>
+          
+        </nav>
+
+        <!--모바일 태블릿에서 보여주기 위한 햄버거메뉴-->
+        <label for="toggle" id="toggle_btn"><i class="fas fa-bars"></i></label>
+        <i class="fas fa-search m_search"></i>
+      </div>
+
+      <!--메인 메뉴 2단 네비게이션-->
+
+      <nav class="gnb">
+        <label for="toggle"><i class="fas fa-times"></i></label>
+        <ul>
+          <li><a href="brand.html" title="브랜드소개">브랜드소개<i class="fas fa-angle-down"></i></a>
+            <ul class="sub">
+              <li><a href="" title="브랜드스토리">브랜드스토리</a></li>
+              <li><a href="" title="커피스토리">커피스토리</a></li>              
+            </ul>
+          </li>
+
+          <li><a href="menu.html" title="메뉴소개">메뉴소개<i class="fas fa-angle-down"></i></a>
+            <ul class="sub">
+              <li><a href="" title="베이커리">베이커리</a></li>
+              <li><a href="" title="음료">음료</a></li>
+              <li><a href="" title="디저트">디저트</a></li>
+              <li><a href="" title="푸드">푸드</a></li>
+              <li><a href="" title="상품">상품</a></li>                          
+            </ul>
+          </li>
+
+          <li><a href="store.html" title="매장안내">매장안내<i class="fas fa-angle-down"></i></a>
+            <ul class="sub">
+              <li><a href=""  title="매장찾기">매장찾기</a></li>
+            </ul>
+          </li>
+
+          <li><a href="community.html" title="커뮤니티">커뮤니티<i class="fas fa-angle-down"></i></a>
+            <ul class="sub">
+              <li><a href="" title="고객의 소리">고객의 소리</a></li>
+              <li><a href=""  title="자주묻는 질문">자주묻는 질문</a></li>
+              <li><a href=""  title="상담톡">상담톡</a></li>
+              <li><a href="" title="이벤트">이벤트</a></li>
+            </ul>
+          </li>
+
+          <li><a href="fran.html" title="프랜차이즈">프랜차이즈<i class="fas fa-angle-down"></i></a>
+            <ul class="sub">
+              <li><a href=""  title="단체 및 기업">단체 및 기업</a></li>
+              <li><a href=""  title="신규입점 제외">신규입점 제외</a></li>
+            </ul>
+          </li>
+
+        </ul>
+      </nav>
+    </header>
+    
+<main>
+  <article class="slide">
+      <h2>메인슬라이드</h2>
+      <div class="flexslider">
+         <ul class="slides">
+          <li><img src="./images/main01.jpg" alt="메인이미지1"></li>
+          <li><img src="./images/main02.jpg" alt="메인이미지2"></li>
+          <li><img src="./images/main03.jpg" alt="메인이미지3"></li>
+          <li><img src="./images/main04.jpg" alt="메인이미지4"></li>
+          <li><img src="./images/main05.jpg" alt="메인이미지5"></li>
+         </ul>
+      </div>
+  </article>
+
+  <section class="con">
+    <h2>메인컨텐츠</h2>
+    <article class="banner">
+      <h3>배너</h3>
+      <a href="#" title="신제품 광고">
+        <img src="./images/mbn01ov.png" alt="신제품 광고">
+      </a>
+    </article>
+  
+  
+  <article class="story">
+      <h3>프랜차이즈&amp;브랜드스토리</h3>
+      <a href="#" title="브랜드 스토리" class="bs" >
+        <img src="./images/mbn0202.png" alt="브랜드스토리" id="bs_img">
+      </a>
+
+      <a href="" title="프랜차이즈" class="fran">
+        <img src="./images/mbn0201.png" alt="프랜차이즈">
+      </a>
+  </article>
+  
+  <article class="ad">
+      <h3>TV광고</h3>
+      <a href="" title="tv광고">
+        <img src="./images/msns.png" alt="티비광고">
+      </a>
+  </article>
+  
+  <article class="notice">
+      <h3 class="title">
+        NOTICE<i class="fas fa-plus"></i>
+      </h3>
+      <ul>
+        <li><a href="a.html" title="내용">쑤니 서현점, 로맨틱 가을을 위한 로즈라떼를 제공합니다........ </a></li>
+        <li><a href="a.html" title="내용">카카오 선물하기에서 쑤니를 찾아보세요.행운이 있스빈다....... </a></li>
+        <li><a href="a.html" title="내용">종이 쿠폰 없이 편하게 적립하자! 스탬프팡을 하세요..... </a></li>
+        <li><a href="a.html" title="내용">[오픈예정점] 디저트카페 쑤니 서울 강남점 오픈을 축하합니다....... </a></li>
+      </ul>
+  </article>
+  
+  <article class="store">
+      <h3>store</h3>
+      <a href=""><img src="./images/mbn04.png" alt="스토어" id="store_img" onmouseover="change();"></a>
+  </article>
+
+  <article class="news">
+      <h3 class="title">NEWS<i class="fas fa-plus"></i></h3>
+      <ul>
+        <li><a href="a.html" title="내용">[IT동아] 디저트카페 쑤니, 카카오톡 선물하기에서 사용할 수 있습니다.</a></li>
+        <li><a href="a.html" title="내용">[Next Daily] JH그룹 쑤니 오픈을 축하합니다. </a></li>
+        <li><a href="a.html" title="내용">[이투데이] 프리미엄 디저트 카페 쑤니 kpga 결제서비스 추가</a></li>
+        <li><a href="a.html" title="내용">[매일경제] 디저트카페 쑤니, 카카오톡 선물하기에서 사용ㅁㄴㅇㅁㄴㅇㅁㄴㅇㅇ할 수 있습니다.</a></li>
+      </ul>
+  </article>
+</section>
+
+</main>
+<footer>
+  <nav class="f_lnb">
+    <ul>
+      <li><a href="a.html" title="회사소개">회사소개 / 오시는길 </a></li>
+      <li><a href="a.html" title="가맹안내">&nbsp;가맹안내</a></li>
+      <li><a href="tel:000-000-0000" title="가맹문의">&nbsp;가맹문의 : 000-000-0000</a></li>
+      <li><a href="tel:000-000-0000" title="일반문의">&nbsp;일반문의 : 000-000-0000</a></li>
+      <li><a href="tel:000-000-0000" title="홍보">&nbsp;홍보,마케팅 문의 : 000-000-00000</a></li>
+    </ul>
+  </nav>
+
+  <nav class="sns">
+    <ul>
+      <li><a href="s.html" title="카카오스토리"><img src="./images/foot_sns01.png" alt="카카오스토리 이미지"></a></li>
+      <li><a href="f.html" title="페이스북"><img src="./images/foot_sns02.png" alt="페이스북 이미지"></a></li>
+      <li><a href="t.html" title="트위터"><img src="./images/foot_sns03.png" alt="트위터 이미지"></a></li>
+      <li><a href="i.html" title="인스타그램"><img src="./images/foot_sns04.png" alt="인스타그램 이미지"></a></li>
+      <li><a href="n.html" title="네이버블로그"><img src="./images/foot_sns05.png" alt="네이버블로그 이미지"></a></li>
+    </ul>
+  </nav>
+
+  <address>
+    <p>(주)치어스 &amp; 경기도 분당구 성남대로 000번길 0-00 모선빌딩 0층</p>
+    <p>법인등록번호 0000-0000 copryright&copy;2021 ssunikorea all rights reserved.</p>
+  </address>
+</footer>
+  </body>
+  <script>
+    //브랜드스토리 이미지에 마우스 오버시 이미지 변경
+  
+    $(window).load(function() {
+    $('.flexslider').flexslider({
+      animation: "slide",
+    });
+  });
+     const menuItems = document.querySelectorAll('.gnb>ul>li>a');
+     menuItems.forEach(function(item,i){
+      item.addEventListener('click', function(){
+        const sub = item.nextElementSibling;
+        if(sub && sub.classList.contains('sub')){
+          event.preventDefault();
+           sub.classList.toggle('act');
+           const icon = item.querySelector('.fa-angle-down');
+           if(icon){
+            icon.classList.toggle('rotate');
+           };
+        };
+      });
+     });
+  
+     window.addEventListener('resize', function(){
+      let w = this.innerWidth;
+      console.log(w);
+      if(w<768){
+        //클릭이벤트 서브메뉴
+      }
+     });
+     </script>
+    
+</html>

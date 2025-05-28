@@ -1,0 +1,84 @@
+@charset "utf-8";
+
+ /*tablet 해상도 서식*/
+ @media screen and (min-width:768px) and (max-width:1024px){
+
+    .con{
+      width:100%;
+      height:100%;
+      margin:1% auto; /*원래 20px인데 1024의 20은 2%이고 마진값을 상하 두 방향이라 1%씩*/
+      display: grid;
+      grid-gap:1%;
+      box-sizing: border-box; /*width 100% + margin, gap 1% 더하면 100% 넘어가서 스크로 생김*/
+      grid-template-columns:auto;
+      grid-template-areas:
+      "item ad"
+      "story story"
+      "notice news"
+      "store store"
+      ;
+      overflow: hidden;
+    }
+
+    .con .banner{grid-area: item;}    
+    .con .story{grid-area: story;}    
+    .con .ad{grid-area: ad;}    
+    .con .notice{grid-area: notice;}    
+    .con .store{grid-area: store;}    
+    .con .news{grid-area: news;}    
+    .con .store{
+      width:100%;
+      text-align: center;
+    }
+    .notice{width:100%;}
+    .news{width:100%;}
+    .store{margin:0 auto;}
+    #toggle_btn{
+      display:block;
+      position:absolute;
+      right:10px;
+      top:74px;
+      font-size:2rem;
+    }
+      /*아이패드에어*/
+    @media screen and (min-width:819px){
+      .notice, .news{width:410px;}
+    }
+    .gnb > ul{
+      width:94%;
+      margin-right: 3.8%;
+      transform: translateY(-5px);
+    }
+    .gnb > ul > li{
+      margin:0 2.4%;
+      text-align: center;
+    }
+    #toggle:checked + header>.gnb{
+      height:250px;
+    }
+    footer{}
+    .f_lnb, address, .sns{
+      width:100%;
+    }
+
+    .sns{
+      transform: translate(-10px, 16px);
+    }
+    address{
+      padding-left:1%;
+    }
+
+    .gnb > ul> li > a::after{
+      content: '';
+      height:3px;
+      display:block;
+      transition:0.3s;
+      background: red;
+      transform:translateY(-3px) scale(0);
+    }
+  
+    .gnb > ul> li >a:hover::after{
+      transform: translateY(-3px) scale(1);
+    }
+
+}
